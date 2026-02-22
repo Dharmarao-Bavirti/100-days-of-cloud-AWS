@@ -7,10 +7,10 @@
 - In the console search bar, type EC2 and open the EC2 dashboard.
 
   <img width="1366" height="615" alt="image" src="https://github.com/user-attachments/assets/a3c3bb49-1336-43b2-803e-7013a5bc3ea2" />
-
+  
 - In the left sidebar, scroll down to **“Network & Security”** → **“Key Pairs”**.
 
-  <img width="1366" height="615" alt="image" src="https://github.com/user-attachments/assets/215d6651-cef3-4793-b574-b7db458d7820" />
+  <img width="1366" height="615" alt="image" src="https://github.com/user-attachments/assets/b15c9e94-d23c-45f5-a603-0cae1257c681" />
 
 
 - **Click** “Create key pair”.
@@ -27,7 +27,7 @@
 
         - Choose `.ppk` if you plan to SSH using PuTTY
           
-  <img width="1366" height="615" alt="image" src="https://github.com/user-attachments/assets/8f75c313-d391-44b1-b654-68d3bdb4d5b5" />
+    <img width="1366" height="615" alt="image" src="https://github.com/user-attachments/assets/996172a1-d3c9-4337-9177-3d9d3b27dec7" />
 
 
 - Click **“Create key pair”.**
