@@ -7,14 +7,19 @@ The s3 bucket name is xfusion-s3-13870, enable versioning for this bucket.
 ✅ Method 1: Using the AWS Management Console
 
 1. Sign in to the AWS Management Console and open the Amazon S3 console.
-![image]({28E5AB0D-0B97-4BD1-8399-2DE0F59D5401}.png)
-2. Select the desired bucket from the Buckets list.
-3. Navigate to the Properties tab.
-![image](<Screenshot 2026-02-22 105025.png>)
-4. Scroll down to find the Bucket Versioning section and select Edit.
-![image](<Screenshot 2026-02-22 105119.png>)
-5. Choose Enable.
-6. Select Save changes to apply the setting
+<img width="1376" height="462" alt="Image" src="https://github.com/user-attachments/assets/50256bbf-a599-40e8-bcb3-ac03007b62b0" />
+
+3. Select the desired bucket from the Buckets list.
+4. Navigate to the Properties tab.
+
+<img width="1909" height="618" alt="Screenshot 2026-02-22 105025" src="https://github.com/user-attachments/assets/d7073032-1c08-4a88-aba9-b17be586b791" />
+
+
+6. Scroll down to find the Bucket Versioning section and select Edit.
+<img width="1912" height="679" alt="Screenshot 2026-02-22 105119" src="https://github.com/user-attachments/assets/291fafd6-b11e-4f27-885b-79f8436e02a5" />
+
+7. Choose Enable.
+8. Select Save changes to apply the setting
 
 ✅ Method 2: Using the AWS CLI
 
