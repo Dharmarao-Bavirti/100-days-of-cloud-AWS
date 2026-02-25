@@ -21,9 +21,12 @@ Steps:
    <img width="1124" height="480" alt="image" src="https://github.com/user-attachments/assets/863be03c-276b-4268-a3b5-74c1fe785f61" />
 
 5. Choose your new instance type (`t2.micro` → `t2.nano`) and **Change instance type**
-   <img width="1348" height="394" alt="image" src="https://github.com/user-attachments/assets/9465c9be-5ac6-4c5a-a7d3-055bcb7d86ca" />
+   
+   <img width="1630" height="367" alt="image" src="https://github.com/user-attachments/assets/febea186-e8fe-4759-8c4e-47a2cdd95256" />
+
 
 6. Start instance from **Instance state** dropdown and verify instance is running and instance type is `t2.nano`
-   <img width="1132" height="145" alt="image" src="https://github.com/user-attachments/assets/f45f6343-acea-408f-9c91-c043f67a7110" />
+   
+   <img width="1640" height="195" alt="image" src="https://github.com/user-attachments/assets/a27727ae-facb-40ae-ac08-c9d0ed884c94" />
 
    
