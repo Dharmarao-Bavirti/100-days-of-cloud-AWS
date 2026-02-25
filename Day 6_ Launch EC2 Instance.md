@@ -22,7 +22,9 @@ To launch an instance
    <img width="338" height="253" alt="image" src="https://github.com/user-attachments/assets/d9748fbc-45c5-473f-a5af-a75b068cf697" />
 
 3. Under Name and tags, for Name, enter a descriptive name for your instance. The name of the instance must be `nautilus-ec2`.
-   <img width="859" height="130" alt="image" src="https://github.com/user-attachments/assets/901546e3-5d6a-4099-af76-e215dfb0a882" />
+   
+   <img width="1086" height="145" alt="image" src="https://github.com/user-attachments/assets/c711d587-fd04-4f0a-8489-3af7ff31ec63" />
+
    
 5. Under Application and OS Images (Amazon Machine Image), choose the Amazon Linux AMI to launch this instance.
    <img width="859" height="475" alt="image" src="https://github.com/user-attachments/assets/66290062-4d4c-48f7-b71a-04b594e1b824" />
