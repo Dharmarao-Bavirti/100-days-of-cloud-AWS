@@ -12,3 +12,4 @@ AWS Documentation to be folllowed: [Creating an AMI from an Amazon EC2 Instance]
   - Right-click the instance that you want to use as the basis for your AMI and choose `Create Image (ABS AMI)` to open the `Create Image dialog window`.
   - From the Create Image dialog window, add a name and a description for your image into the provided fields, then choose the `OK` button to continue.
   - The Image Created confirmation window opens in Visual Studio when the image is created, choose the OK button to continue.
+<img width="1920" height="873" alt="{image}" src="https://github.com/user-attachments/assets/15602474-b083-470f-82fd-81f4fc7970a8" />
