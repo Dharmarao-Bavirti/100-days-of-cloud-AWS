@@ -10,29 +10,44 @@ AWS DOcs to be followed: [Create IAM policies (console)](https://docs.aws.amazon
 
    <img width="987" height="446" alt="image" src="https://github.com/user-attachments/assets/f64ff977-879b-4676-8b34-9b3257915b50" />
 
-3. In the navigation pane on the left, choose `Policies`.
+2. In the navigation pane on the left, choose `Policies`.
 
    <img width="263" height="466" alt="image" src="https://github.com/user-attachments/assets/3d69cac5-ce9b-4cd9-bea3-25bab85bda2a" />
 
-5. Choose `Create policy`.
+3. Choose `Create policy`.
 
    <img width="1054" height="141" alt="image" src="https://github.com/user-attachments/assets/6793a244-acef-4e73-9153-968d0b9e35fc" />
 
-7. In the `Policy editor` section, choose the `Visual` option and select `EC2`.
+4. In the `Policy editor` section, choose the `JSON` option and add below content.
+```
+   {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*",
+                "ec2:Get*",
+                "ec2:List*"
+                
+            ],
+            "Resource": "*"
+        }
+      
+    ]
+}
+```
+   <img width="1884" height="891" alt="image" src="https://github.com/user-attachments/assets/085ac14c-41f4-4ea9-b34e-318acf772dbc" />
 
    <img width="1328" height="337" alt="image" src="https://github.com/user-attachments/assets/84dfb468-d5ee-4792-b729-519b250b4c9a" />
 
-9. In Actions allowed, choose the actions to add to the policy. You can choose actions in the following ways:
+5. On the `Review and create` page, type a `Policy Name` and a `Description (optional)` for the policy that you are creating. Review the Permissions defined in this policy to make sure that you have granted the intended permissions.
 
-    - Select the checkbox for all actions.
-    - Choose add actions to type the name of a specific action. You can use wildcards (*) to specify multiple actions.
-    - Select one of the Access level groups to choose all actions for the access level (for example, Read, Write, or List).
-    - Expand each of the Access level groups to choose individual actions.
-10. On the `Review and create` page, type a `Policy Name` and a `Description (optional)` for the policy that you are creating. Review the Permissions defined in this policy to make sure that you have granted the intended permissions.
+    
+    <img width="1897" height="862" alt="image" src="https://github.com/user-attachments/assets/02c2391f-5d3c-482c-a268-a06d692bc0e8" />
 
-    <img width="1322" height="421" alt="image" src="https://github.com/user-attachments/assets/1bbf9632-bd60-46d2-82dd-b99caa867ed1" />
 
-14. Choose Create policy to save your new policy.
+6. Choose Create policy to save your new policy.
 
     
 
