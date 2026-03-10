@@ -22,10 +22,17 @@ Create an IAM role as below:
 
 4. On step 2, in the `Permission policy` tab, search for the custom policy and select it.
 
-   <img width="1366" height="448" alt="image" src="https://github.com/user-attachments/assets/6228ec61-060e-432f-90be-c9b1554f6f76" />
+   
+   <img width="1906" height="556" alt="image" src="https://github.com/user-attachments/assets/9ba53370-a881-4e3f-b492-1bab301b15f9" />
+
 
 5. On step 3, enter preferred role name and click on `Create role`.
 
-   <img width="1349" height="406" alt="image" src="https://github.com/user-attachments/assets/165a56e6-3ffc-4e6a-b272-96256bc34b42" />
+   
+   <img width="1905" height="481" alt="image" src="https://github.com/user-attachments/assets/313c7bbb-e0fa-4d03-ba45-20ca57bdf640" />
+
+   <img width="1872" height="755" alt="image" src="https://github.com/user-attachments/assets/3d37252e-901b-4fae-9371-e441ed4f1ef7" />
+
+
 
 
