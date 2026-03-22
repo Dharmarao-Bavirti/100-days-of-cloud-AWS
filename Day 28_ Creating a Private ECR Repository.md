@@ -15,7 +15,7 @@ Create a private ECR repository named `nautilus-ecr`. There is a Dockerfile unde
 
    <img width="1346" height="314" alt="image" src="https://github.com/user-attachments/assets/41cb9ab2-4492-49ed-820b-cf6f1f9f526c" />
 
-5. For R`epository name`, enter a unique name for your repository. The repository name can be specified on its own (for example `nginx-web-app`). Alternatively, it can be prepended with a namespace to group the repository into a category (for example project-a/nginx-web-app).
+5. For `Repository name`, enter a unique name for your repository. The repository name can be specified on its own (for example `nginx-web-app`). Alternatively, it can be prepended with a namespace to group the repository into a category (for example project-a/nginx-web-app).
 
    <img width="1299" height="166" alt="image" src="https://github.com/user-attachments/assets/8a49e52b-81dd-46c2-8274-a1f40d98575f" />
    
