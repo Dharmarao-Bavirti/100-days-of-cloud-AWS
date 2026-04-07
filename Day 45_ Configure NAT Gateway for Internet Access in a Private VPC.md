@@ -2,25 +2,25 @@
 
 The Nautilus DevOps team is tasked with enabling internet access for an EC2 instance running in a private subnet. This instance should be able to upload a test file to a public S3 bucket once it can access the internet. To achieve this, the team must set up a NAT Gateway in a public subnet within the same VPC.
 
-1) A VPC named `xfusion-priv-vpc` and a private subnet `xfusion-priv-subnet` have already been created.
-2) An EC2 instance named `xfusion-priv-ec2` is already running in the private subnet.
-3) The EC2 instance is configured with a cron job that uploads a test file to a `bucket xfusion-nat-11088` once internet is accessible.
+1) A VPC named `datacenter-priv-vpc` and a private subnet `datacenter-priv-subnet` have already been created.
+2) An EC2 instance named `datacenter-priv-ec2` is already running in the private subnet.
+3) The EC2 instance is configured with a cron job that uploads a test file to a bucket `datacenter-nat-1744` once internet is accessible.
 
 Your task is to:
 
-- Create a public subnet named `xfusion-pub-subnet` in the same VPC.
+- Create a public subnet named `datacenter-pub-subnet` in the same VPC.
 - Create an Internet Gateway and attach it to the VPC.
-- Create a route table `xfusion-pub-rt` and associate it with the public subnet.
-- Allocate an Elastic IP and create a NAT Gateway named `xfusion-natgw`.
+- Create a route table `datacenter-pub-rt` and associate it with the public subnet.
+- Allocate an Elastic IP and create a NAT Gateway named `datacenter-natgw`.
 - Update the private route table to route `0.0.0.0/0` traffic via the NAT Gateway.
 
-Once complete, verify that the EC2 instance can reach the internet by confirming the presence of the test file in the S3 `bucket xfusion-nat-11088`. After completing all the configuration, please wait a few minutes for the test file to appear in the bucket, as it may take 2–3 minutes.
+Once complete, verify that the EC2 instance can reach the internet by confirming the presence of the test file in the S3 `bucket datacenter-nat-1744`. After completing all the configuration, please wait a few minutes for the test file to appear in the bucket, as it may take 2–3 minutes.
 
 
 ## Task 1: Create a public subnet
 
 1. **From VPC dashboard, select subnet and click `Create`.**
-2. **Select `xfusion-priv-vpc`.**
+2. **Select `datacenter-priv-vpc`.**
 
    <img width="1318" height="222" alt="image" src="https://github.com/user-attachments/assets/009acfa2-4f4e-42cb-89fe-e41384d337ca" />
 
@@ -41,30 +41,30 @@ Once complete, verify that the EC2 instance can reach the internet by confirming
 
    **You can see that newly created internet gateway is detached.**
 
-3. **To attach the internet gateway to `xfusion-priv-vpc`, select `xfusion-ig` and choose `Action` > `Attach`. and select `xfusion-priv-vpc`**
+3. **To attach the internet gateway to `datacenter-priv-vpc`, select `datacenter-ig` and choose `Action` > `Attach`. and select `datacenter-priv-vpc`**
 
    <img width="1298" height="262" alt="image" src="https://github.com/user-attachments/assets/b3878b30-65c8-4826-a051-819f9af50d48" />
 
 
 ## Task 3: Create a route table
 
-1. **Create a route table in `xfusion-priv-vpc`**
+1. **Create a route table in `datacenter-priv-vpc`**
 
    <img width="1328" height="440" alt="image" src="https://github.com/user-attachments/assets/3c7e0bd7-a114-4ea2-aefa-dcae1f2810fa" />
 
-2. **After creating route table, edit its route to internet gateway `xfusion-ig` you just created.**
+2. **After creating route table, edit its route to internet gateway `datacenter-ig` you just created.**
 
    <img width="1366" height="356" alt="image" src="https://github.com/user-attachments/assets/c0433b06-e92d-4aed-99de-e57bf4ee22d5" />
 
-3. **Next, change `xfusion-pub-subnet` route table association to `xfusion-pub-rt`.**
+3. **Next, change `datacenter-pub-subnet` route table association to `datacenter-pub-rt`.**
 
    <img width="1365" height="428" alt="image" src="https://github.com/user-attachments/assets/33bed471-690b-4241-be49-e07345b92997" />
 
-4. **Now select `xfusion-priv-vpc` and see its resource map.**
+4. **Now select `datacenter-priv-vpc` and see its resource map.**
 
    <img width="935" height="182" alt="image" src="https://github.com/user-attachments/assets/53cac65e-8d12-4808-9d38-19e776e0fbcc" />
 
-   **You can notice that `xfusion-pub-subnet` is showing as public subnet now.**
+   **You can notice that `datacenter-pub-subnet` is showing as public subnet now.**
 
 ## Task 4: Allocate an Elastic IP (Optional)
 
@@ -81,7 +81,7 @@ Once complete, verify that the EC2 instance can reach the internet by confirming
 
    <img width="1125" height="119" alt="image" src="https://github.com/user-attachments/assets/2805aa25-1986-41d2-8d42-04936c28e49b" />
 
-2. **Enter gateway name and select `Availability mode` as `Zonal` and `xfusion-pub-subnet`.**
+2. **Enter gateway name and select `Availability mode` as `Zonal` and `datacenter-pub-subnet`.**
 
    <img width="1294" height="471" alt="image" src="https://github.com/user-attachments/assets/ca4f4c36-697a-4722-a38e-4f941907eb49" />
 
@@ -92,7 +92,7 @@ Once complete, verify that the EC2 instance can reach the internet by confirming
 
 ## Task 6: Update the private route table to route 0.0.0.0/0 traffic via the NAT Gateway.
 
-1. **Go to **VPC** > **Route Tables** and identify the route table associated with: `xfusion-priv-subnet`**
+1. **Go to **VPC** > **Route Tables** and identify the route table associated with: `datacenter-priv-subnet`**
 
    <img width="1173" height="196" alt="image" src="https://github.com/user-attachments/assets/76383851-16be-4441-b53e-79c6c94d7083" />
 
