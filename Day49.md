@@ -170,7 +170,7 @@ aws iam create-policy \
 ```bash
 aws iam attach-role-policy \
   --role-name $S3_ROLE \
-  --policy-arn arn:aws:iam::480283352309:policy/s3-put-policy
+  --policy-arn arn:aws:iam::152233226911:policy/s3-put-policy
 ```
 Instance profile
 ```bash
