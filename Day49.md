@@ -28,7 +28,7 @@ PUB_SUBNET="xfusion-pub-subnet"
 PUB_RT="xfusion-pub-rt"
 VPC_PEERING="xfusion-vpc-peering"
 PUB_EC2="xfusion-pub-ec2"
-PRIV_S3="xfusion-s3-logs-27334"
+PRIV_S3="xfusion-s3-logs-30059"
 S3_ROLE="xfusion-s3-role"
 ```
 
